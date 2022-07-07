@@ -13,6 +13,19 @@ export default function Coin({
   price,
   dataStart,
   dataEnd,
+}: {
+  name: string;
+  dataQuoteStart: number;
+  dataQuoteEnd: number;
+  dataTradeStart: number;
+  dataTradeEnd: number;
+  dataSymbolsCount: number;
+  volumeDay: number;
+  volumeHour: number;
+  volumeMonth: number;
+  price: number;
+  dataStart: number;
+  dataEnd: number;
 }) {
   const [toggle, setToggle] = useState(false);
   return (
