@@ -61,8 +61,11 @@ function App() {
             name="baseSelected"
             id="baseSelected"
             onChange={handleBaseSelected}
-            className="form-select appearance-none block w-6 px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+            className="form-select appearance-none block w-16 px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
           >
+            <option value="default" defaultValue={"default"} selected>
+              Select currency
+            </option>
             {coins.map((coin) => (
               <option
                 className="text-black"
@@ -78,8 +81,11 @@ function App() {
             name="selected"
             id="selected"
             onChange={handleSelected}
-            className="form-select appearance-none block w-6 px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+            className="form-select appearance-none block w-16 px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
           >
+            <option value="default" defaultValue={"default"} selected>
+              Select currency
+            </option>
             {coins.map((coin) => (
               <option
                 className="text-black"
