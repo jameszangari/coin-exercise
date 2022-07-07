@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     setLoading(true);
     fetch(
-      `http://rest.coinapi.io/v1/assets?apikey=${process.env.REACT_APP_COINAPI}`
+      `https://rest.coinapi.io/v1/assets?apikey=${process.env.REACT_APP_COINAPI}`
     )
       .then((res) => res.json())
       .then((data) => {
