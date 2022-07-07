@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     setLoading(true);
     fetch(
-      `http://rest-sandbox.coinapi.io/v1/assets?apikey=${process.env.REACT_APP_COINAPI}`
+      `http://rest.coinapi.io/v1/assets?apikey=${process.env.REACT_APP_COINAPI}`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -63,9 +63,6 @@ function App() {
             onChange={handleBaseSelected}
             className="form-select appearance-none block w-6 px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
           >
-            <option value="value" selected>
-              Choose currrency
-            </option>
             {coins.map((coin) => (
               <option
                 className="text-black"
@@ -83,9 +80,6 @@ function App() {
             onChange={handleSelected}
             className="form-select appearance-none block w-6 px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
           >
-            <option value="value" selected>
-              Choose currrency
-            </option>
             {coins.map((coin) => (
               <option
                 className="text-black"
